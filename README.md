@@ -8,7 +8,7 @@ Neural nets are trained to predict the next character based on a given context l
 
 ![see Figure 1](figures/rnn_prediction_accuracy.png)
 
-Second, I trained a transformer model (Karpathy 2022), also based on a context length of 80 characters. The prediction accuracy is at 19.7% and 44.7% after adding additional information about the first character of the word: 
+Second, I trained a transformer model (Karpathy 2022), also based on a context length of 80 characters. The prediction accuracy is at 20.5% and 45.4% after adding additional information about the first character of the word: 
 
 ![Figure 2](figures/prediction_accuracy_transformer.png)
 
