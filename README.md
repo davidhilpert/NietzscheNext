@@ -10,13 +10,11 @@ Neural nets are trained to predict the next character based on a given context l
 
 The accuracy of predicting the next full word in the sequence is at 20.5%. This probability more than doubles to 45.4% after adding additional information about the first character of the word: 
 
-![Figure 2](figures/prediction_accuracy_transformer.png)
+![Figure 2](figures/vis_accuracy_word_prediction_transformer.png)
 
-Second, a character-level Recurrent Neural Network (RNN) model was trained, with a context length of 80 characters. This model yields a test-set prediction accuracy of 17.3% for predicting the next word from context. This accuracy gets boosted to 36.4% when the model receives the first character of the word in question as additional information. Overall, this model performs worse than the transformer model.
+Second, a character-level Recurrent Neural Network (RNN) model was trained, with a context length of 80 characters. This model yields a test-set prediction accuracy of 17.3% for predicting the next word from context. This accuracy gets boosted to 36.4% when the model receives the first character of the word in question as additional information. Overall, the RNN performs worse than the transformer model.
 
-![Figure 3](figures/rnn_prediction_accuracy.png)
-
-Finally, 
+Finally, further exploring the accuracy of the transformer model, it turns out that the target word is among the top-3 model predictions almost 40% of the time when predicting the next word based on context. When adding information about the first character of the target word, that accuracy rate increases to over 60%.
 
 ----
 References:
