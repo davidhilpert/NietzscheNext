@@ -16,6 +16,8 @@ Second, a character-level Recurrent Neural Network (RNN) model was trained, with
 
 Finally, further exploring the accuracy of the transformer model, it turns out that the target word is among the top-3 model predictions almost 40% of the time when predicting the next word based on context. When adding information about the first character of the target word, that accuracy rate increases to over 60%.
 
+![Figure 2](figures/vis_accuracy_top3_preds.png)
+
 ----
 References:
 Karpathy, Andrej. 2022. NanoGPT. https://github.com/karpathy/nanoGPT/tree/master
